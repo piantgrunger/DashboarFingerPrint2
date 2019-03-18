@@ -2,6 +2,7 @@
 
 $jam_masuk = end(explode(" ", $list[0]['jam_masuk']));
 $jam_keluar = end(explode(" ", $list[0]['jam_keluar']));
+$status =($jam_masuk<"07:30:00")?"Datang Terlambat":"Datang Lebih Awal";
 ?>
 
 <script>
@@ -46,7 +47,7 @@ $jam_keluar = end(explode(" ", $list[0]['jam_keluar']));
                             </tr>
                             <tr>
                                 <th>Keterangan</th>
-                                <td>Datang Terlambat </td>
+                                <td><?=$status ?></td>
                             </tr>
                         </tbody>
                     </table>
