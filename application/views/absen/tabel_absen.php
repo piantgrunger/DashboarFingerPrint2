@@ -2,7 +2,8 @@
 
 $jam_masuk = end(explode(" ", $list[0]['jam_masuk']));
 $jam_keluar = end(explode(" ", $list[0]['jam_keluar']));
-$status =($jam_masuk<"07:30:00")?"Datang Terlambat":"Datang Lebih Awal";
+$selisih = $list[0]['selisih'];
+$status  = ($selisih < 0)?"Datang Terlambat ":"Datang Lebih Awal";
 ?>
 
 <script>
@@ -103,4 +104,4 @@ $status =($jam_masuk<"07:30:00")?"Datang Terlambat":"Datang Lebih Awal";
             </div>
         </div>
     </div>
-</div>
+</di v>

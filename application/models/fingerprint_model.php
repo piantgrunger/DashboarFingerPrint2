@@ -6,7 +6,11 @@ class fingerprint_model extends CI_Model
 {
     public function getAbsen($lokasi)
     {
-        $query= $this->db->query("select distinct * from absen a
+        $query= $this->db->query("select distinct *,
+                                   timediff('07:31:00',date_format(a.jam_masuk,'%H %i %S')) as selisih
+
+
+                                 from absen a
                                inner join  pegawai p on p.nip=a.nip
                                LEFT join  m_unit m on m.id=p.unit_kerja
                                 LEFT join  foto_pegawai f on p.nip=f.nip
