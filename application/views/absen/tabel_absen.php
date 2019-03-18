@@ -3,7 +3,7 @@
 $jam_masuk = end(explode(" ", $list[0]['jam_masuk']));
 $jam_keluar = end(explode(" ", $list[0]['jam_keluar']));
 $selisih = $list[0]['selisih'];
-$status  = ($selisih < 0)?"Datang Terlambat ":"Datang Lebih Awal";
+$status  = ($selisih < 0) ? "Datang Terlambat " : "Datang Lebih Awal";
 ?>
 
 <script>
@@ -19,10 +19,7 @@ $status  = ($selisih < 0)?"Datang Terlambat ":"Datang Lebih Awal";
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-md-3">
-                    <img src="data:image/jpeg;base64,<?= base64_encode($list[0]['foto']) ?>" width="200" height="250" />'
-                </div>
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <table id="w0" class="table table-striped table-bordered detail-view">
                         <tbody>
                             <tr>
@@ -48,7 +45,7 @@ $status  = ($selisih < 0)?"Datang Terlambat ":"Datang Lebih Awal";
                             </tr>
                             <tr>
                                 <th>Keterangan</th>
-                                <td><?=$status ?></td>
+                                <td><?= $status ?></td>
                             </tr>
                         </tbody>
                     </table>
