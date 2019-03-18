@@ -1,4 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (! defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
@@ -17,7 +19,7 @@
 |	['password'] The password used to connect to the database
 |	['database'] The name of the database you want to connect to
 |	['dbdriver'] The database type. ie: mysql.  Currently supported:
-				 mysql, mysqli, postgre, odbc, mssql, sqlite, oci8
+                 mysql, mysqli, postgre, odbc, mssql, sqlite, oci8
 |	['dbprefix'] You can add an optional prefix, which will be added
 |				 to the table name when using the  Active Record class
 |	['pconnect'] TRUE/FALSE - Whether to use a persistent connection
@@ -46,7 +48,7 @@
 */
 
 $active_group = 'default';
-$active_record = TRUE;
+$active_record = true;
 
 
 // $db['default']['hostname'] = '180.250.165.139';
@@ -65,21 +67,21 @@ $active_record = TRUE;
 // $db['default']['autoinit'] = TRUE;
 // $db['default']['stricton'] = FALSE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = '10.101.10.246';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['password'] = 'mrpresident';
 $db['default']['database'] = 'fingerprint';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
+$db['default']['pconnect'] = true;
+$db['default']['db_debug'] = true;
+$db['default']['cache_on'] = false;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['default']['autoinit'] = true;
+$db['default']['stricton'] = false;
 
 // koneksi localhost
 // $db['localhost']['hostname'] = 'localhost';
@@ -123,15 +125,15 @@ $db['apt']['password'] = '';
 $db['apt']['database'] = 'apt';
 $db['apt']['dbdriver'] = 'mysqli';
 $db['apt']['dbprefix'] = '';
-$db['apt']['pconnect'] = TRUE;
-$db['apt']['db_debug'] = TRUE;
-$db['apt']['cache_on'] = FALSE;
+$db['apt']['pconnect'] = true;
+$db['apt']['db_debug'] = true;
+$db['apt']['cache_on'] = false;
 $db['apt']['cachedir'] = '';
 $db['apt']['char_set'] = 'utf8';
 $db['apt']['dbcollat'] = 'utf8_general_ci';
 $db['apt']['swap_pre'] = '';
-$db['apt']['autoinit'] = TRUE;
-$db['apt']['stricton'] = FALSE;
+$db['apt']['autoinit'] = true;
+$db['apt']['stricton'] = false;
 
 // koneksi Simpeg Lokal
 $db['simpeg']['hostname'] = 'localhost';
@@ -140,15 +142,15 @@ $db['simpeg']['password'] = '';
 $db['simpeg']['database'] = 'simpeg_0511';
 $db['simpeg']['dbdriver'] = 'mysqli';
 $db['simpeg']['dbprefix'] = '';
-$db['simpeg']['pconnect'] = TRUE;
-$db['simpeg']['db_debug'] = TRUE;
-$db['simpeg']['cache_on'] = FALSE;
+$db['simpeg']['pconnect'] = true;
+$db['simpeg']['db_debug'] = true;
+$db['simpeg']['cache_on'] = false;
 $db['simpeg']['cachedir'] = '';
 $db['simpeg']['char_set'] = 'utf8';
 $db['simpeg']['dbcollat'] = 'utf8_general_ci';
 $db['simpeg']['swap_pre'] = '';
-$db['simpeg']['autoinit'] = TRUE;
-$db['simpeg']['stricton'] = FALSE;
+$db['simpeg']['autoinit'] = true;
+$db['simpeg']['stricton'] = false;
 
 // koneksi Remun Lokal
 $db['remun']['hostname'] = 'localhost';
@@ -157,15 +159,15 @@ $db['remun']['password'] = '';
 $db['remun']['database'] = 'remun';
 $db['remun']['dbdriver'] = 'mysqli';
 $db['remun']['dbprefix'] = '';
-$db['remun']['pconnect'] = TRUE;
-$db['remun']['db_debug'] = TRUE;
-$db['remun']['cache_on'] = FALSE;
+$db['remun']['pconnect'] = true;
+$db['remun']['db_debug'] = true;
+$db['remun']['cache_on'] = false;
 $db['remun']['cachedir'] = '';
 $db['remun']['char_set'] = 'utf8';
 $db['remun']['dbcollat'] = 'utf8_general_ci';
 $db['remun']['swap_pre'] = '';
-$db['remun']['autoinit'] = TRUE;
-$db['remun']['stricton'] = FALSE;
+$db['remun']['autoinit'] = true;
+$db['remun']['stricton'] = false;
 
 // koneksi siakad Lokal
 $db['siakad']['hostname'] = 'localhost';
@@ -174,15 +176,15 @@ $db['siakad']['password'] = '';
 $db['siakad']['database'] = 'siakad_01';
 $db['siakad']['dbdriver'] = 'mysqli';
 $db['siakad']['dbprefix'] = '';
-$db['siakad']['pconnect'] = TRUE;
-$db['siakad']['db_debug'] = TRUE;
-$db['siakad']['cache_on'] = FALSE;
+$db['siakad']['pconnect'] = true;
+$db['siakad']['db_debug'] = true;
+$db['siakad']['cache_on'] = false;
 $db['siakad']['cachedir'] = '';
 $db['siakad']['char_set'] = 'utf8';
 $db['siakad']['dbcollat'] = 'utf8_general_ci';
 $db['siakad']['swap_pre'] = '';
-$db['siakad']['autoinit'] = TRUE;
-$db['siakad']['stricton'] = FALSE;
+$db['siakad']['autoinit'] = true;
+$db['siakad']['stricton'] = false;
 
 
 
@@ -194,15 +196,15 @@ $db['siakad_server']['password'] = 'ampelakademik!3';
 $db['siakad_server']['database'] = 'iainmigrasi';
 $db['siakad_server']['dbdriver'] = 'postgre';
 $db['siakad_server']['dbprefix'] = '';
-$db['siakad_server']['pconnect'] = TRUE;
-$db['siakad_server']['db_debug'] = TRUE;
-$db['siakad_server']['cache_on'] = FALSE;
+$db['siakad_server']['pconnect'] = true;
+$db['siakad_server']['db_debug'] = true;
+$db['siakad_server']['cache_on'] = false;
 $db['siakad_server']['cachedir'] = '';
 $db['siakad_server']['char_set'] = 'utf8';
 $db['siakad_server']['dbcollat'] = 'utf8_general_ci';
 $db['siakad_server']['swap_pre'] = '';
-$db['siakad_server']['autoinit'] = TRUE;
-$db['siakad_server']['stricton'] = FALSE;
+$db['siakad_server']['autoinit'] = true;
+$db['siakad_server']['stricton'] = false;
 
 
 /* End of file database.php */
