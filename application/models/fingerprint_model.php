@@ -7,7 +7,7 @@ class fingerprint_model extends CI_Model
     public function getAbsen($lokasi)
     {
         $query= $this->db->query("select distinct a.*,nama,nama_unit,
-                                   timediff('07:31:00',date_format(a.jam_masuk,'%H %i %S')) as selisih
+                                   timediff('07:31:00',date_format(a.jam_masuk,'%H:%i:%S')) as selisih
 
 
                                  from absen a
