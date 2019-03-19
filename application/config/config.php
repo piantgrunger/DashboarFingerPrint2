@@ -22,7 +22,7 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8080/penilaian/';
+$config['base_url'] = 'http://localhost/DashboarFingerPrint2/';
 // Base url , set url base untuk mengambil folder, css,
 //set url untuk mengatur url
 

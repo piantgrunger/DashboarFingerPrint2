@@ -23,6 +23,14 @@ class fingerprint_model extends CI_Model
                               ");
         return $query->result_array();
     }
+    public function getFoto($nip)
+    {
+      $query = $this->db->query("select foto from foto_pegawai where nip ='$nip' limit 1 ");
+      return $query->result_array();
+
+    
+    }
+
 }
 
 /* End of file fingerprint.php */

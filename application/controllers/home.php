@@ -25,9 +25,11 @@ class Home extends CI_Controller
 
 
         $list=  $this->fingerprint_model->getAbsen($lokasi);
+        $foto = $this->fingerprint_model->getFoto($list[0]['nip']);
         //   die(var_dump($this->db->last_query()));
         $data = ['lokasi' => $lokasi,
-                     'list' => $list
+                     'list' => $list,
+                     'foto' => $foto,
                    ];
         // print_r($data['dataKuisioner']);
         $this->load->view('base/header', $data);

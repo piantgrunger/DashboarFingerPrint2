@@ -19,7 +19,14 @@ $status  = ($selisih < 0) ? "Datang Terlambat " : "Datang Lebih Awal";
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-md-12">
+            <div class="col-md-2">
+<?php
+   
+         echo '<img src="data:image/jpeg;base64,'.base64_encode($foto[0]['foto']).'" width="100%" height="300" />';
+     
+?>
+</div>
+                <div class="col-md-10">
                     <table id="w0" class="table table-striped table-bordered detail-view">
                         <tbody>
                             <tr>
