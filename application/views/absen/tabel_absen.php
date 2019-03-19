@@ -3,13 +3,13 @@
 $jam_masuk = end(explode(" ", $list[0]['jam_masuk']));
 $jam_keluar = end(explode(" ", $list[0]['jam_keluar']));
 $selisih = $list[0]['selisih'];
-$status  = ($selisih < 0) ? "Datang Terlambat " : "Datang Lebih Awal";
+$status  = (substr($selisih,0,1) === '-') ? "Datang Terlambat " : "Datang Lebih Awal";
 ?>
 
 <script>
     setTimeout(function() {
         window.location.reload(1);
-    }, 5000);
+    }, 3000);
 </script>
 <div class="col-md-12">
     <div class="card">
