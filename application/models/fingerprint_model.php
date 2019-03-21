@@ -17,7 +17,7 @@ class fingerprint_model extends CI_Model
                               where (absen_datang='$lokasi' or absen_keluar='$lokasi' ) and
                               date_format(jam_masuk,'%Y%m%d') = date_format(curdate(),'%Y%m%d')
                               order by  case when jam_keluar='00:00:00' then jam_masuk else jam_keluar end desc
-                              limit 10
+                              limit 5
 
 
                               ");

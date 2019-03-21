@@ -30,29 +30,29 @@ $status  = (substr($selisih,0,1) === '-') ? "Datang Terlambat " : "Datang Lebih 
                     <table id="w0" class="table table-striped table-bordered detail-view">
                         <tbody>
                             <tr>
-                                <th>Nip</th>
-                                <td> <?= $list[0]["nip"] ?></td>
+                                <th style="font-size:30px">Nip</th>
+                                <td style="font-size:30px">  <?= $list[0]["nip"] ?></td>
                             </tr>
                             <tr>
-                                <th>Nama Pegawai</th>
-                                <td> <?= $list[0]["nama"] ?></td>
+                                <th style="font-size:30px">Nama Pegawai</th>
+                                <td style="font-size:30px"> <?= $list[0]["nama"] ?></td>
                             </tr>
                             <tr>
-                                <th>Nama Unit Kerja</th>
-                                <td> <?= $list[0]["nama_unit"] ?></td>
+                                <th style="font-size:30px">Nama Unit Kerja</th>
+                                <td style="font-size:30px"> <?= $list[0]["nama_unit"] ?></td>
 
                             </tr>
                             <tr>
-                                <th>Masuk</th>
-                                <td><?= $jam_masuk ?></td>
+                                <th style="font-size:30px">Masuk</th>
+                                <td style="font-size:30px"><?= $jam_masuk ?></td>
                             </tr>
                             <tr>
-                                <th>Pulang</th>
-                                <td><?= $jam_keluar ?></td>
+                                <th style="font-size:30px">Pulang</th>
+                                <td style="font-size:30px"><?= $jam_keluar ?></td>
                             </tr>
                             <tr>
-                                <th>Keterangan</th>
-                                <td><?= $status ?></td>
+                                <th style="font-size:30px"> Keterangan</th>
+                                <td style="font-size:30px"><?= $status ?></td>
                             </tr>
                         </tbody>
                     </table>
