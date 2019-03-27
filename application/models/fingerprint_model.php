@@ -11,7 +11,7 @@ class fingerprint_model extends CI_Model
                                   timediff('07:31:00',date_format(a.jam_masuk,'%H:%i:%S')) as selisih,
                                   case when hour(jam_masuk) >= 5 and hour(jam_masuk) < 13 then 'Shift 1' 
                                    when hour(jam_masuk) >= 13 and hour(jam_masuk) < 21 then 'Shift 2'
-                                   else  'Shift 3' end
+                                   else  'Shift 3' end as shift
                                     
 
 
@@ -27,6 +27,7 @@ class fingerprint_model extends CI_Model
                               (date_format(jam_masuk,'%Y%m%d') = date_format(curdate(),'%Y%m%d')
                               or date_format(jam_masuk,'%Y%m%d') = date_format(curdate(),'%Y%m%d') - interval 1 day
                               )
+                              
                               order by  case when jam_keluar='00:00:00' then jam_masuk else jam_keluar end desc
                               limit 5
 
