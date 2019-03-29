@@ -13,7 +13,7 @@ if ($list[0]['cek_status'] === '1') {
 <script>
     setTimeout(function() {
         window.location.reload(1);
-    }, 2000);
+    }, 4000);
 </script>
 <div class="col-md-12">
     <div class="card">
