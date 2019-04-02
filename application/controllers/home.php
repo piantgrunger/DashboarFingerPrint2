@@ -20,6 +20,7 @@ class Home extends CI_Controller
     public function index()
     {
         $lokasi= $this->input->get('lokasi', true);
+        $reload= $this->input->get('reload', true);
 
         $this->load->model('fingerprint_model');
 
@@ -30,6 +31,7 @@ class Home extends CI_Controller
         $data = ['lokasi' => $lokasi,
                      'list' => $list,
                      'foto' => $foto,
+                     'reload' => $reload
                    ];
         // print_r($data['dataKuisioner']);
         $this->load->view('base/header', $data);

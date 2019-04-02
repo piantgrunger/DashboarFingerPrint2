@@ -9,12 +9,13 @@ if ($list[0]['cek_status'] === '1') {
     $status  = ' Anda Berada Pada ' . $list[0]['shift'] ;
 }
 ?>
-
+<?php if($reload!==1) { ?>
 <script>
     setTimeout(function() {
         window.location.reload(1);
     }, 4000);
 </script>
+<?php ?>
 <div class="col-md-12">
     <div class="card">
         <div class="card-header card-header-primary">
